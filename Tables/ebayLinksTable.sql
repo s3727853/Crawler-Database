@@ -8,6 +8,8 @@ CREATE TABLE ebaylinks (
     initial_price NUMERIC NOT NULL,
     current_price NUMERIC,
     crawl_interval INT NOT NULL,
+    image VARCHAR,
+    endtime VARCHAR,
     CONSTRAINT fk_id
         FOREIGN KEY(user_id)
             REFERENCES users(id)
